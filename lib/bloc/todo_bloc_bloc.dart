@@ -21,5 +21,9 @@ class TodoBlocBloc extends Bloc<TodoBlocEvent, TodoBlocState> {
         );
       }
     });
+
+    on<TodoSelectedDate>((event, emit) {
+      final currentState = state;
+    });
   }
 }
