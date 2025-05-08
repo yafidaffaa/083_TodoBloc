@@ -40,6 +40,12 @@ class TodoBlocBloc extends Bloc<TodoBlocEvent, TodoBlocState> {
             isCompleted: !updatedTodos[event.index].isCompleted,
           );
         }
+        emit(
+          TodoLoaded(
+            todos: updatedTodos,
+            selectedDate: currentState.selectedDate,
+          ),
+        );
       }
     });
   }
