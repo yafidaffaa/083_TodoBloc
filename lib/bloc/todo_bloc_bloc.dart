@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:state_todo_bloc/model/todo.dart';
+import 'package:state_todo_bloc/data/model/todo.dart';
 
 part 'todo_bloc_event.dart';
 part 'todo_bloc_state.dart';
